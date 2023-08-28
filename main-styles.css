@@ -18,6 +18,7 @@ body {
     color: white;
     border-radius: 24px;
     padding: 16px;
+    margin-top: 36px;
 }
 
 .nav-menu h1 {
@@ -219,6 +220,8 @@ main {
     padding: 100px 0; /* Adjust padding as needed */
     border: none;
     border-radius: 24px;
+    margin-bottom: 36px;
+    filter: grayscale(100%); /* Apply grayscale filter */
 }
 
 .free-pass h2 {
@@ -228,13 +231,18 @@ main {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    outline: 2px solid #000;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    
 }
 
 .free-pass p {
-    font-family: Josefin Sans;
-    font-size: 24px;
-    font-weight: 400;
+    color: #FFF;
+font-family: Josefin Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 /* Styling for Claim Pass form */
@@ -251,12 +259,25 @@ main {
     margin-bottom: 20px;
 }
 
-.form-row input,
-.form-row button {
-    width: calc(50% - 10px);
+.input-container {
+    width: calc(50% - 20px);
+}
+
+.checkbox-container {
+    width: calc(50% - 20px);
+    display: flex;
+    align-items: center;
+}
+
+.input-container input,
+.checkbox-container input,
+.form-row .free-pass-button {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    height: 40px;
+    vertical-align: middle;
 }
 
 .terms-label {
@@ -275,3 +296,4 @@ main {
     cursor: pointer;
     border: none;
 }
+
