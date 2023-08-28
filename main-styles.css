@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.nav-menu {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #B7BFA9;
+    color: white;
+    border-radius: 24px;
+    padding: 16px;
+}
+
+.nav-menu h1 {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #45433E;
+}
+
+.nav-menu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #45433E;
+}
+
+.nav-menu nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+}
+
+.nav-menu nav ul li:last-child {
+    margin-right: 0;
+}
+
+h2 {
+    color: var(--dark-brown, #45433E);
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 1;
+    /* Set opacity to 1 */
+}
+
+p {
+    color: var(--dark-brown, #45433E);
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 1;
+    /* Set opacity to 1 */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    background: rgba(183, 191, 169, 0.5);
+    /* Medium green with 50% opacity */
+    width: 90%;
+    margin: 80px auto 0;
+}
+
+.concessions {
+    width: 90%; /* Adjust the width to span the full container */
+    max-width: 1216px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    flex-wrap: wrap;
+    /* Allow wrapping to next line if needed */
+    align-items: flex-start;
+    /* Align items to the top of the container */
+    gap: 16px;
+}
+
+
+/* Your existing styles... */
+
+.concessions-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    gap: 16px;
+    text-align: center; /* Center-align the content horizontally */
+}
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.image-container {
+    position: relative;
+    width: calc(33.33% - 20px);
+    height: auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: 390px;
+    object-fit: cover;
+}
+
+.image-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--medium-green, #B7BFA9);
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    z-index: 1;
+    padding: 0 20px;
+    /* Add padding to both left and right */
+    box-sizing: border-box;
+    /* Include padding in element's width */
+}
+
+.image-title h3 {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+    /* Adjust line height if necessary */
+}
+
+.get-pass-button {
+    position: absolute;
+    bottom: 32px;
+    /* Adjust to half of the border width */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark-bown, #45433E);
+    color: var(--medium-green, #B7BFA9);
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 20px;
+    /* Adjust padding as needed */
+    cursor: pointer;
+}
+
+.why-us {
+    width: 90%;
+    max-width: 1216px;
+    margin: 80px auto;
+    text-align: center; /* Center the content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add some gap between the heading and the paragraph */
+}
+
+.why-us h2 {
+    color: var(--dark-brown, #45433E);
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 1;
+    margin-bottom: 0; /* Remove margin from the heading */
+}
+
+.why-us p {
+    color: var(--dark-brown, #45433E);
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 1;
+}
+
+/* Styling for Free Day Pass section */
+.free-pass {
+    background-image: url('images/class.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    border: none;
+    border-radius: 24px;
+}
+
+.free-pass h2 {
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    outline: 2px solid #000;
+}
+
+.free-pass p {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Styling for Claim Pass form */
+.claim-pass-form {
+    width: 90%;
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-row input,
+.form-row button {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.terms-label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.form-row .free-pass-button {
+    background-color: var(--medium-green, #B7BFA9);
+    color: white;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
