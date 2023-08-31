@@ -33,8 +33,6 @@ body {
 
 .nav-menu nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: inline-block;
     color: #45433E;
 }
@@ -43,12 +41,15 @@ body {
     display: inline-block;
     margin: 0;
     padding: 0;
-    margin-right: 80px;
+    margin-right: 20px; /* Adjust this value to control the space between items */
+    color: #45433E;
 }
 
 .nav-menu nav ul li:last-child {
     margin-right: 0;
 }
+
+
 
 h2 {
     color: var(--dark-brown, #45433E);
@@ -72,7 +73,7 @@ p {
     /* Set opacity to 1 */
 }
 
-main {
+.main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,9 +277,15 @@ line-height: normal;
 .form-row .free-pass-button {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 8px;
+    background: var(--medium-green, #B7BFA9);
     vertical-align: middle;
+    color: var(--dark-bown, #45433E);
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
 }
 .input-container input,
 .checkbox-container input{
@@ -290,36 +297,46 @@ line-height: normal;
 }
 
 .terms-label {
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.form-row .free-pass-button {
-    background-color: var(--medium-green, #B7BFA9);
-    color: white;
+    color: var(--dark-brown, #45433E);
+    /* Regular 24 */
     font-family: Josefin Sans;
     font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    border: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically align items */
+    white-space: nowrap; /* Prevent text from breaking onto new lines */
+}
+
+.terms-label input[type="checkbox"] {
+    margin-right: 10px; /* Add some space between checkbox and text */
+}
+
+
+
+.form-row .free-pass-button {
+    color: var(--dark-bown, #45433E);
+/* Regular 24 */
+font-family: Josefin Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 /* Styling for Questions section */
 .questions {
     width: 90%;
     max-width: 1216px;
-    margin: 80px auto 0;
+    margin: 80px auto 80px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px; /* Add gap between sections */
 }
 
 .questions-content {
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -345,17 +362,18 @@ line-height: normal;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex: 1; /* Take up the same height as the image */
 }
 
 .questions-form input,
 .questions-form textarea,
 .questions-form button {
-    width: 100%; /* Set width to 100% */
-    height: 48px;
+    width: 100%;
+    height: 32px;
     padding: 10px;
     border-radius: 8px;
     background: var(--medium-green, #B7BFA9);
-    color: white;
+    color: var(--dark-bown, #45433E);
     font-family: Josefin Sans;
     font-size: 16px;
     font-weight: 700;
@@ -364,25 +382,206 @@ line-height: normal;
 }
 
 .questions-form textarea {
-    height: 120px;
-    width: 100%;
+    height: 100%;
+    width: 105%;
     resize: none;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
 }
 
-
 .questions-image {
-    flex: 1;
+    flex: 2;
     display: flex;
     align-items: center;
 }
 
 .questions-image img {
     width: 100%;
-    max-width: 400px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: grayscale(100);
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-line {
+    width: 100%;
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links p {
+    /* Regular 16 */
+font-family: Josefin Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    color: #333;
+    cursor: pointer;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-buttons img {
+    width: 42px;
+    height: 42px;
+}
+
+/* Additional styles and adjustments as needed */
+
+.select-pass-button {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark-bown, #45433E);
+    color: var(--medium-green, #B7BFA9);
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.select-pass-button:hover,
+.select-pass-button:focus {
+    background-color: var(--dark-green, #5E8B3A);
+}
+
+.pricing-section{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.pricing-section, .payment-transfer-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    width: 90%;
+}
+
+.pricing-content-container, .payment-transfer-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: flex-start;
+}
+
+.pricing-divider, .payment-transfer-divider {
+    width: 100%;
+    border: 1px solid var(--dark-bown, #45433E);
+    margin: 0;
+}
+
+.concessions-text, .payment-text,
+.transfer-info, .fake-account-number,
+.account-holder-name, .reference,
+.important-text, .userid-text,
+.payment-amount, .important-heading {
+    color: var(--dark-bown, #45433E);
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.promo-code-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--dark-bown, #45433E);
+    border-radius: 8px;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    margin-bottom: 16px;
+    background: var(--dark-bown, #45433E);
+    color: white;
+}
+
+.important-box {
+    width: 360px;
+    height: 205px;
+    flex-shrink: 0;
+    background-color: white;
+    color: var(--dark-bown, #45433E);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    gap: 16px;
+}
+
+.important-heading {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.important-text,
+.userid-text {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.transfer-complete-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--dark-bown, #45433E);
+    color: white;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+@media (max-width: 1200px) {
+    .pricing-section {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        flex-shrink: 0;
+        padding: 64px 0 32px;
+    }
+
+    .pricing-content-container, .payment-transfer-section {
+        align-self: center;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+

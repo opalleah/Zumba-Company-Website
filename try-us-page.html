@@ -18,6 +18,7 @@
         </nav>
     </header>
     <main>
+        <div class="main-container">
         <section class="concessions">
             <div class="concessions-heading">
                 <h2>Concessions</h2>
@@ -29,14 +30,14 @@
                     <div class ="image-title">
                     <h3>3 Class Pass</h3>
                 </div>
-                    <button class="get-pass-button">Get Pass</button>
+                <button class="get-pass-button" id="get-pass-button">Get Pass</button>
                 </div>
                 <div class="image-container">
                     <img src="images/concession-image2.jpg" alt="Image 2">
                     <div class ="image-title">
                     <h3>7 Class Pass</h3>
                 </div>
-                    <button class="get-pass-button">Get Pass</button>
+                <button class="get-pass-button" id="get-pass-button">Get Pass</button>
                 </div>
                 <div class="image-container">
                     <img src="images/concession-image3.jpg" alt="Image 3">
@@ -44,7 +45,7 @@
                     <h3>16 Class Pass</h3>
                 </div>
                     <div class ="image-title"></div>
-                    <button class="get-pass-button">Get Pass</button>
+                    <button class="get-pass-button" id="get-pass-button">Get Pass</button>
                 </div>
             </div>
         </section>
@@ -63,29 +64,25 @@
     <form>
     <div class="form-row">
         <div class="input-container">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name">
+            <input type="text" id="first-name" name="first-name" placeholder="first name...">
         </div>
         <div class="input-container">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name">
+            <input type="text" id="last-name" name="last-name" placeholder="last name...">
         </div>
     </div>
     <div class="form-row">
         <div class="input-container">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" placeholder="email address...">
         </div>
         <div class="input-container">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone" placeholder="phone number...">
         </div>
     </div>
     <div class="form-row">
         <div class="checkbox-container">
             <label class="terms-label">
                 <input type="checkbox" id="terms" name="terms">
-                I agree to the Terms of Service
+                terms of service
             </label>
         </div>
         <div class="button-container">
@@ -93,19 +90,20 @@
         </div>
     </div>
 </section>
+</div>
 <section class="questions">
     <div class="questions-content">
         <h2>Have Any Questions?</h2>
         <p>Feel free to leave us a message.</p>
         <form class="questions-form">
             <div class="questions-form">
-            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="full name..." required>
         </div>
         <div class="questions-form">
-            <input type="email" placeholder="Email" required>
+            <input type="email" placeholder="email address..." required>
         </div>
         <div class="questions-form">
-            <textarea placeholder="Your Message" required></textarea>
+            <textarea placeholder="write your message here..." required></textarea>
             </div>
             <div class="questions-form"></form>
             <button type="submit">Send Message</button>
@@ -113,14 +111,40 @@
         </form>
     </div>
     <div class="questions-image">
-        <img src="images/questions-image.jpg" alt="Questions Image">
+        <img src="images/strectching.jpg" alt="Questions Image">
     </div>
 </section>
 
     </main>
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <hr class="footer-line">
+        <div class="footer-links">
+            <p>about us</p>
+            <p>blog</p>
+            <p>get the app</p>
+            <p>community</p>
+            <p>security</p>
+            <p>terms </p>
+            <p>privacy policy</p>
+        </div>
+        <div class="footer-buttons">
+            <img src="images/facebook.png" alt="Button 1" width="42" height="42">
+            <img src="images/youtube.png" alt="Button 2" width="42" height="42">
+            <img src="images/instagram.png" alt="Button 3" width="42" height="42">
+        </div>
     </footer>
-    <!-- Additional scripts or elements can be included before closing the body tag -->
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const getPassButtons = document.querySelectorAll('.get-pass-button');
+        
+        getPassButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                window.location.href = "payment-page.html";
+            });
+        });
+    });
+</script>
+
+
