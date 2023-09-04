@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="main-styles.css">
+</head>
+<body>
+    <header class="nav-menu">
+        <h1 id="home">Zumba</h1>
+        <nav>
+            <ul><li>News</li></ul>
+            <ul><li id="try-us">Try Us</li></ul>
+            <ul><li>TimeTable</li></ul>
+            <ul><li>About Us</li></ul>
+            <ul><li>Contact</li></ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="hero">
+                <h1>Welcome to Zumba</h1>
+                <p>Your path to fitness and fun starts here.</p>
+            </section>
+            
+            <h2>Featured Classes</h2>
+            <section class="featured-classes">
+                <div class="class-card">
+                    <img src="images/class1.jpg" alt="Class 1">
+                    <h3>Zumba Fitness</h3>
+                    <p>Join our energetic Zumba fitness class and dance your way to a healthier you.</p>
+                    <a href="try-us-page.html" class="class-details-button">Learn More</a>
+                </div>
+                <div class="class-card">
+                    <img src="images/class2.jpg" alt="Class 2">
+                    <h3>Zumba Toning</h3>
+                    <p>Tone your muscles while dancing in our Zumba Toning class. Get fit and have fun!</p>
+                    <a href="try-us-page.html" class="class-details-button">Learn More</a>
+                </div>
+                <div class="class-card">
+                    <img src="images/class3.jpg" alt="Class 3">
+                    <h3>Zumba Slow Rhythm</h3>
+                    <p>Experience the soothing and graceful side of Zumba with our Slow Rhythm class.</p>
+                    <a href="try-us-page.html" class="class-details-button">Learn More</a>
+                </div>
+            </section>
+
+            <!-- Additional Content -->
+            <h2>Our Instructors</h2>
+            <section class="instructors">
+                <div class="instructor-card">
+                    <img src="images/instructor1.jpg" alt="Instructor 1">
+                    <h3>Jane Doe</h3>
+                    <p>Certified Zumba instructor with over 5 years of experience.</p>
+                </div>
+                <div class="instructor-card">
+                    <img src="images/instructor2.jpg" alt="Instructor 2">
+                    <h3>John Smith</h3>
+                    <p>Passionate about fitness and dancing. Join John's fun-filled classes.</p>
+                </div>
+                <div class="instructor-card">
+                    <img src="images/instructor3.jpg" alt="Instructor 3">
+                    <h3>Lisa Johnson</h3>
+                    <p>Join Lisa for high-energy Zumba sessions that will keep you motivated.</p>
+                </div>
+            </section>
+
+            <h2>Upcoming Events</h2>
+            <section class="events">
+                <div class="event-card">
+                    <img src="images/event1.jpg" alt="Event 1">
+                    <h3>Zumba Marathon</h3>
+                    <p>Join our Zumba Marathon event and dance for a good cause.</p>
+                    <p>Date: October 15, 2023</p>
+                </div>
+                <div class="event-card">
+                    <img src="images/event2.jpg" alt="Event 2">
+                    <h3>Zumba Party</h3>
+                    <p>Celebrate with us at our Zumba Party event. Music, dancing, and fun!</p>
+                    <p>Date: November 5, 2023</p>
+                </div>
+                <div class="event-card">
+                    <img src="images/event3.jpg" alt="Event 3">
+                    <h3>Zumba Workshop</h3>
+                    <p>Learn new Zumba moves and techniques at our Zumba Workshop.</p>
+                    <p>Date: December 10, 2023</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr class="footer-line">
+        <div class="footer-links">
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Get the App</p>
+            <p>Community</p>
+            <p>Security</p>
+            <p>Terms</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="footer-buttons">
+            <img src="images/facebook.png" alt="Button 1" width="42" height="42">
+            <img src="images/youtube.png" alt="Button 2" width="42" height="42">
+            <img src="images/instagram.png" alt="Button 3" width="42" height="42">
+        </div>
+    </footer>
+</body>
+<script>
+     document.getElementById("try-us").addEventListener("click", function() {
+        window.location.href = "try-us-page.html";
+    });
+
+    document.getElementById("home").addEventListener("click", function() {
+        window.location.href = "home-page.html";
+    });
+</script>
+</html>

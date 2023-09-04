@@ -26,26 +26,27 @@
                     <p>Get your concessions today</p>
                 </div>
                 <div class="image-grid">
-                    <div class="image-container">
+                    <div class="featured-classes">
+                        <div class="image-container class-card">
                         <img src="images/concession-image1.jpg" alt="Image 1">
                         <div class="image-title">
                             <h3>3 Class Pass</h3>
                         </div>
-                        <button class="select-pass-button" data-concessions="3" data-price="27.60">Select</button>
+                        <button class="class-details-button" data-concessions="3" data-price="27.60">Select</button>
                     </div>
-                    <div class="image-container">
+                    <div class="image-container class-card">
                         <img src="images/concession-image2.jpg" alt="Image 2">
                         <div class="image-title">
                             <h3>7 Class Pass</h3>
                         </div>
-                        <button class="select-pass-button" data-concessions="7" data-price="49.99">Select</button>
+                        <button class="class-details-button" data-concessions="7" data-price="49.99">Select</button>
                     </div>
-                    <div class="image-container">
+                    <div class="image-container class-card">
                         <img src="images/concession-image3.jpg" alt="Image 3">
                         <div class="image-title">
                             <h3>16 Class Pass</h3>
                         </div>
-                        <button class="select-pass-button" data-concessions="16" data-price="99.00">Select</button>
+                        <button class="class-details-button" data-concessions="16" data-price="99.00">Select</button>
                     </div>
                 </div>
             </section>
@@ -107,7 +108,7 @@
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const selectButtons = document.querySelectorAll('.select-pass-button');
+            const selectButtons = document.querySelectorAll('.class-details-button');
             const concessionsText = document.getElementById('concessions');
             const paymentAmount = document.getElementById('payment-amount');
             const transferAmount = document.getElementById('transfer-amount'); // Add this line

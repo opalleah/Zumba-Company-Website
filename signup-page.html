@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .left {
+            flex: 1;
+            text-align: center;
+        }
+
+        .left img {
+            max-width: 80%;
+            filter: grayscale(0%); /* Make the image grayscale */
+            border-radius: 24px; /* Apply border-radius */
+        }
+
+        .right {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center both .left and .right content vertically */
+            margin-left: 10%;
+        }
+
+        .right h1 {
+            color: #000;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            /* Bold 24 */
+            font-family: Josefin Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .signup-link {
+            font-size: 16px;
+            text-decoration: none;
+            color: var(--Dark-Bown, #45433E); /* Use the specified color */
+            /* Regular 16 */
+            font-family: Josefin Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute; /* Position the link absolutely */
+            top: 10%; /* Adjust top position to align with the top right */
+            right: 6%; /* Adjust right position to align with the top right */
+        }
+
+        /* Add this CSS to your existing styles */
+        form {
+            text-align: left; /* To align labels on top of the input boxes */
+            width: 100%; /* Make the form full width */
+            margin-left: 50%;
+            margin-top: 10%;
+        }
+
+        /* Style for input boxes */
+        form label {
+            display: block; /* Display labels on top */
+            color: #000;
+            /* Regular 16 */
+            font-family: Josefin Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 8px; /* Add some spacing between labels and inputs */
+        }
+
+        form input {
+            width: 260px;
+            height: 32px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: var(--Dark-Bown, #45433E);
+            border: none; /* Remove default input border */
+            padding: 8px; /* Add some padding for better appearance */
+            margin-bottom: 16px; /* Add some spacing between inputs */
+            color: #fff;
+            /* Regular 16 */
+            font-family: Josefin Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        /* Style for the submit button */
+        form button {
+            width: 278px;
+            height: 48px;
+            border-radius: 8px;
+            background: var(--Dark-Bown, #45433E);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            /* Add hover effect */
+            transition: background-color 0.3s;
+            /* Bold 16 */
+            font-family: Josefin Sans;
+             font-size: 16px;
+            font-style: normal;
+               font-weight: 700;
+              line-height: normal;
+        }
+
+        form button:hover {
+            background-color: #9b9494; /* Change background color on hover */
+        }
+
+        .main-container {
+            border-radius: 24px;
+            background: var(--Medium-Green, #B7BFA9);
+            /* Medium green with 50% opacity */
+             width: 90%;
+             margin: 80px;
+             padding: 80px;
+}
+        form input[type="tel"],
+        form input[type="email"] {
+            /* Style for phone number and email input fields */
+            width: 260px;
+            height: 32px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: var(--Dark-Bown, #45433E);
+            border: none;
+            padding: 8px;
+            margin-bottom: 16px;
+            color: #fff;
+            font-family: Josefin Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="left">
+                <img src="images/login.jpg" alt="Portrait Image">
+            </div>
+            <div class="right">
+                <a class="signup-link" href="login-page.html">already a member? login!</a>
+                <h1>Sign Up to Zumba</h1>
+                <form action="signup.php" method="POST" id="signup-form">
+                    <!-- Your sign-up form fields go here -->
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Your login validation code here
+            var validLogin = true; // Replace with your actual validation logic
+
+            if (validLogin) {
+                // Redirect to home-page.html
+                window.location.href = 'home-page.html';
+            } else {
+                // Handle failed login, display error message, etc.
+                alert("Login failed. Please check your credentials.");
+            }
+        });
+    </script>
+</body>
+</html>

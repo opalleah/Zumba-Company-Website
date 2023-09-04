@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="nav-menu">
-        <h1>Zumba</h1>
+        <h1 id="home">Zumba</h1>
         <nav>
             <ul><li>News</li></ul>
             <ul><li>Try Us</li></ul>
@@ -19,36 +19,37 @@
     </header>
     <main>
         <div class="main-container">
-        <section class="concessions">
-            <div class="concessions-heading">
-                <h2>Concessions</h2>
-                <p>Get Started Today</p>
-            </div>
-            <div class="image-grid">
-                <div class="image-container">
-                    <img src="images/concession-image1.jpg" alt="Image 1">
-                    <div class ="image-title">
-                    <h3>3 Class Pass</h3>
+            
+                <div class="concessions-heading">
+                    <h2>Concessions</h2>
+                    <p>Get Started Today</p>
                 </div>
-                <button class="get-pass-button" id="get-pass-button">Get Pass</button>
+                <div class="image-grid">
+                    <section class="featured-classes">
+                    <div class="image-container class-card">
+                        <img src="images/concession-image1.jpg" alt="Image 1">
+                        <div class="image-title">
+                            <h3>3 Class Pass</h3>
+                        </div>
+                        <button class="class-details-button" id="get-pass-button" >Get Pass</button>
+                    </div>
+                    <div class="image-container class-card">
+                        <img src="images/concession-image2.jpg" alt="Image 2">
+                        <div class="image-title">
+                            <h3>7 Class Pass</h3>
+                        </div>
+                        <button class="class-details-button" id="get-pass-button">Get Pass</button>
+                    </div>
+                    <div class="image-container class-card">
+                        <img src="images/concession-image3.jpg" alt="Image 3">
+                        <div class="image-title">
+                            <h3>16 Class Pass</h3>
+                        </div>
+                        <button class="class-details-button" id="get-pass-button">Get Pass</button>
+                    </div>
                 </div>
-                <div class="image-container">
-                    <img src="images/concession-image2.jpg" alt="Image 2">
-                    <div class ="image-title">
-                    <h3>7 Class Pass</h3>
-                </div>
-                <button class="get-pass-button" id="get-pass-button">Get Pass</button>
-                </div>
-                <div class="image-container">
-                    <img src="images/concession-image3.jpg" alt="Image 3">
-                    <div class ="image-title">
-                    <h3>16 Class Pass</h3>
-                </div>
-                    <div class ="image-title"></div>
-                    <button class="get-pass-button" id="get-pass-button">Get Pass</button>
-                </div>
-            </div>
-        </section>
+            </section>
+            
         <section class="why-us">
             <h2>Why Us?</h2>
             <p>At our Zumba studio, we bring the party to your workout! 
@@ -133,18 +134,31 @@
             <img src="images/instagram.png" alt="Button 3" width="42" height="42">
         </div>
     </footer>
-</body>
-</html>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const getPassButtons = document.querySelectorAll('.get-pass-button');
-        
+    <script>
+        // Try Us Page
+        const tryUsLink = document.getElementById("try-us");
+        if (tryUsLink) {
+            tryUsLink.addEventListener("click", function() {
+                window.location.href = "try-us-page.html";
+            });
+        }
+    
+        // Home Page
+        const homeLink = document.getElementById("home");
+        if (homeLink) {
+            homeLink.addEventListener("click", function() {
+                window.location.href = "home-page.html";
+            });
+        }
+    
+        // Get Pass Button
+        const getPassButtons = document.querySelectorAll(".class-details-button");
         getPassButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                window.location.href = "payment-page.html";
+            button.addEventListener("click", function() {
+                window.location.href = "login-page.html";
             });
         });
-    });
-</script>
+    </script>
+    
 
 
