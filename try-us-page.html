@@ -10,11 +10,11 @@
     <header class="nav-menu">
         <h1 id="home">Zumba</h1>
         <nav>
-            <ul><li>News</li></ul>
-            <ul><li>Try Us</li></ul>
-            <ul><li>TimeTable</li></ul>
-            <ul><li>About Us</li></ul>
-            <ul><li>Contact</li></ul>
+            <ul><li id="news">News</li></ul>
+            <ul><li id="try-us">Try Us</li></ul>
+            <ul><li id="timetable">TimeTable</li></ul>
+            <ul><li id="about-us">About Us</li></ul>
+            <ul><li id="contact">Contact</li></ul>
         </nav>
     </header>
     <main>
@@ -135,6 +135,24 @@
         </div>
     </footer>
     <script>
+        //Header Links
+        
+        // Home Page
+        const homeLink = document.getElementById("home");
+        if (homeLink) {
+            homeLink.addEventListener("click", function() {
+                window.location.href = "home-page.html";
+            });
+        }
+
+        //News Page
+        const newsLink = document.getElementById("news");
+        if (newsLink) {
+            newsLink.addEventListener("click", function() {
+                window.location.href = "news-page.html";
+            });
+        }
+
         // Try Us Page
         const tryUsLink = document.getElementById("try-us");
         if (tryUsLink) {
@@ -142,12 +160,28 @@
                 window.location.href = "try-us-page.html";
             });
         }
-    
-        // Home Page
-        const homeLink = document.getElementById("home");
-        if (homeLink) {
-            homeLink.addEventListener("click", function() {
-                window.location.href = "home-page.html";
+
+        // Timetable Page
+        const timetableLink = document.getElementById("timetable");
+        if (timetableLink) {
+            timetableLink.addEventListener("click", function() {
+                window.location.href = "timetable-page.html";
+            });
+        }
+
+        // About Us Page
+        const aboutUsLink = document.getElementById("about-us");
+        if (aboutUsLink) {
+            aboutUsLink.addEventListener("click", function() {
+                window.location.href = "about-us-page.html";
+            });
+        }
+
+        // Contact Page
+        const contactLink = document.getElementById("contact");
+        if (contactLink) {
+            contactLink.addEventListener("click", function() {
+                window.location.href = "contact-us-page.html";
             });
         }
     

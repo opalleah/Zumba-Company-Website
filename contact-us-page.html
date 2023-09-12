@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="main-styles.css">
+</head>
+<body>
+    <header class="nav-menu">
+        <h1 id="home">Zumba</h1>
+        <nav>
+            <ul><li id="news">News</li></ul>
+            <ul><li id="try-us">Try Us</li></ul>
+            <ul><li id="timetable">TimeTable</li></ul>
+            <ul><li id="about-us">About Us</li></ul>
+            <ul><li id="contact">Contact</li></ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="questions">
+                <div class="questions-content">
+                    <h2>Have Any Questions?</h2>
+                    <p>Feel free to leave us a message.</p>
+                    <form class="questions-form">
+                        <div class="questions-form">
+                            <input type="text" placeholder="full name..." required>
+                        </div>
+                        <div class="questions-form">
+                            <input type="email" placeholder="email address..." required>
+                        </div>
+                        <div class="questions-form">
+                            <textarea placeholder="write your message here..." required></textarea>
+                        </div>
+                        <div class="questions-form">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="questions-image">
+                    <img src="images/strectching.jpg" alt="Questions Image">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr class="footer-line">
+        <div class="footer-links">
+            <p>about us</p>
+            <p>blog</p>
+            <p>get the app</p>
+            <p>community</p>
+            <p>security</p>
+            <p>terms </p>
+            <p>privacy policy</p>
+        </div>
+        <div class="footer-buttons">
+            <img src="images/facebook.png" alt="Button 1" width="42" height="42">
+            <img src="images/youtube.png" alt="Button 2" width="42" height="42">
+            <img src="images/instagram.png" alt="Button 3" width="42" height="42">
+        </div>
+    </footer>
+    <script>
+        //Header Links
+        
+        // Home Page
+        const homeLink = document.getElementById("home");
+        if (homeLink) {
+            homeLink.addEventListener("click", function() {
+                window.location.href = "home-page.html";
+            });
+        }
+
+        //News Page
+        const newsLink = document.getElementById("news");
+        if (newsLink) {
+            newsLink.addEventListener("click", function() {
+                window.location.href = "news-page.html";
+            });
+        }
+
+        // Try Us Page
+        const tryUsLink = document.getElementById("try-us");
+        if (tryUsLink) {
+            tryUsLink.addEventListener("click", function() {
+                window.location.href = "try-us-page.html";
+            });
+        }
+
+        // Timetable Page
+        const timetableLink = document.getElementById("timetable");
+        if (timetableLink) {
+            timetableLink.addEventListener("click", function() {
+                window.location.href = "timetable-page.html";
+            });
+        }
+
+        // About Us Page
+        const aboutUsLink = document.getElementById("about-us");
+        if (aboutUsLink) {
+            aboutUsLink.addEventListener("click", function() {
+                window.location.href = "about-us-page.html";
+            });
+        }
+
+        // Contact Page
+        const contactLink = document.getElementById("contact");
+        if (contactLink) {
+            contactLink.addEventListener("click", function() {
+                window.location.href = "contact-us-page.html";
+            });
+        }
+
+        // Try a Class Button
+        const tryClassButton = document.querySelector(".try-us-button");
+        if (tryClassButton) {
+            tryClassButton.addEventListener("click", function() {
+                // You can navigate to a page where users can sign up for a trial class
+                window.location.href = "trial-class-signup.html";
+            });
+        }
+    </script>
+</body>
+</html>

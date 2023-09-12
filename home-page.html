@@ -10,18 +10,36 @@
     <header class="nav-menu">
         <h1 id="home">Zumba</h1>
         <nav>
-            <ul><li>News</li></ul>
+            <ul><li id="news">News</li></ul>
             <ul><li id="try-us">Try Us</li></ul>
-            <ul><li>TimeTable</li></ul>
-            <ul><li>About Us</li></ul>
-            <ul><li>Contact</li></ul>
+            <ul><li id="timetable">TimeTable</li></ul>
+            <ul><li id="about-us">About Us</li></ul>
+            <ul><li id="contact">Contact</li></ul>
         </nav>
     </header>
     <main>
         <div class="main-container">
             <section class="hero">
-                <h1>Welcome to Zumba</h1>
-                <p>Your path to fitness and fun starts here.</p>
+                <div class="hero-image">
+                    <!-- Your image goes here -->
+                    <img src="images/hero-image.jpg" alt="Hero Image">
+                </div>
+                <div class="hero-content">
+                    <h1>Welcome to Zumba</h1>
+                    <p>Your path to fitness and fun starts here.</p>
+                </div>
+            </section>
+        
+        
+
+            
+            <section class="about-zumba">
+                <h2>What is Zumba?</h2>
+                <p>Zumba is a dynamic and exhilarating fitness program that combines Latin and international music with easy-to-follow dance moves.</p>
+                <p>It's a fun and effective way to burn calories, improve cardiovascular health, and tone your body.</p>
+                <p>At our Zumba studio, we offer a variety of classes led by certified instructors who are passionate about helping you achieve your fitness goals while having a blast.</p>
+                <p>Whether you're a seasoned dancer or a complete beginner, there's a Zumba class for you!</p>
+                <a href="try-us-page.html" class="learn-more-button">Learn More</a>
             </section>
             
             <h2>Featured Classes</h2>
@@ -30,64 +48,77 @@
                     <img src="images/class1.jpg" alt="Class 1">
                     <h3>Zumba Fitness</h3>
                     <p>Join our energetic Zumba fitness class and dance your way to a healthier you.</p>
-                    <a href="try-us-page.html" class="class-details-button">Learn More</a>
+                    <a href="timetable-page.html" class="class-details-button">See Timetable</a>
                 </div>
                 <div class="class-card">
                     <img src="images/class2.jpg" alt="Class 2">
                     <h3>Zumba Toning</h3>
                     <p>Tone your muscles while dancing in our Zumba Toning class. Get fit and have fun!</p>
-                    <a href="try-us-page.html" class="class-details-button">Learn More</a>
+                    <a href="timetable-page.html" class="class-details-button">See Timetable</a>
                 </div>
                 <div class="class-card">
                     <img src="images/class3.jpg" alt="Class 3">
                     <h3>Zumba Slow Rhythm</h3>
                     <p>Experience the soothing and graceful side of Zumba with our Slow Rhythm class.</p>
-                    <a href="try-us-page.html" class="class-details-button">Learn More</a>
+                    <a href="timetable-page.html" class="class-details-button">See Timetable</a>
                 </div>
             </section>
 
-            <!-- Additional Content -->
-            <h2>Our Instructors</h2>
-            <section class="instructors">
-                <div class="instructor-card">
+            <h2>Meet Our Instructors</h2>
+            <div class="team-members">
+                <div class="team-member">
                     <img src="images/instructor1.jpg" alt="Instructor 1">
-                    <h3>Jane Doe</h3>
-                    <p>Certified Zumba instructor with over 5 years of experience.</p>
+                    <div class="member-info">
+                        <h3>Mark Berd</h3>
+                        <h4>Fitness Instructor</h4>
+                        <p>About Mark Berd</p>
+                        <p>Mark has the knowledge and expertise to guide you on your fitness journey. Whether you're looking to build muscle, lose weight, or improve your overall health, he can help you achieve your goals.</p>
+                    </br><p>Join Mark to start your fitness journey</p>
+                    </div>
                 </div>
-                <div class="instructor-card">
+                <div class="team-member">
                     <img src="images/instructor2.jpg" alt="Instructor 2">
-                    <h3>John Smith</h3>
-                    <p>Passionate about fitness and dancing. Join John's fun-filled classes.</p>
+                    <div class="member-info">
+                        <h3>Jane Doe</h3>
+                        <h4>Dance Instructor</h4>
+                        <p>About Jane Doe</p>
+                        <p>Jane Doe is a passionate dance instructor with a background in various dance styles, including hip-hop, salsa, and contemporary. Her energetic and fun-filled dance classes are suitable for all levels, from beginners to advanced dancers.</p>
+                    </br><p>Join Jane and discover the joy of dancing!</p>
+                    </div>
                 </div>
-                <div class="instructor-card">
+                <div class="team-member">
                     <img src="images/instructor3.jpg" alt="Instructor 3">
-                    <h3>Lisa Johnson</h3>
-                    <p>Join Lisa for high-energy Zumba sessions that will keep you motivated.</p>
+                    <div class="member-info">
+                        <h3>John Smith</h3>
+                        <h4>Rhythm Instructor</h4>
+                        <p>About John Smith</p>
+                        <p>John Smith is dedicated to teaching the art of rhythm and percussion. With his extensive experience as a drummer and percussionist, he brings a unique blend of music and fitness to his classes.</p>
+                    </br><p>Join John and feel the beat!</p>
+                    </div>
                 </div>
+                <div class="team-member">
+                    <img src="images/instructor4.jpg" alt="Instructor 4">
+                    <div class="member-info">
+                        <h3>Lisa Johnson</h3>
+                        <h4>Toning Instructor</h4>
+                        <p>About Lisa Johnson</p>
+                        <p>Lisa Johnson specializes in toning and sculpting workouts. Her high-energy sessions will challenge your muscles and help you achieve a toned and strong physique.</p>
+                    </br><p>Join Lisa for an empowering fitness experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Latest News</h2>
+            <section class="news">
+                <article class="news-article">
+                    <img src="images/news1.jpg" alt="News 1">
+                    <h3>Stay Updated with Our Blog</h3>
+                    <p>Read our latest blog post to stay informed about fitness tips, nutrition, and upcoming events at our studio.</p>
+                    <a href="news.html" class="read-more-button">Read More</a>
+                </article>
+                <!-- Add more news articles here -->
             </section>
 
-            <h2>Upcoming Events</h2>
-            <section class="events">
-                <div class="event-card">
-                    <img src="images/event1.jpg" alt="Event 1">
-                    <h3>Zumba Marathon</h3>
-                    <p>Join our Zumba Marathon event and dance for a good cause.</p>
-                    <p>Date: October 15, 2023</p>
-                </div>
-                <div class="event-card">
-                    <img src="images/event2.jpg" alt="Event 2">
-                    <h3>Zumba Party</h3>
-                    <p>Celebrate with us at our Zumba Party event. Music, dancing, and fun!</p>
-                    <p>Date: November 5, 2023</p>
-                </div>
-                <div class="event-card">
-                    <img src="images/event3.jpg" alt="Event 3">
-                    <h3>Zumba Workshop</h3>
-                    <p>Learn new Zumba moves and techniques at our Zumba Workshop.</p>
-                    <p>Date: December 10, 2023</p>
-                </div>
-            </section>
-        </div>
     </main>
     <footer>
         <hr class="footer-line">
@@ -108,12 +139,54 @@
     </footer>
 </body>
 <script>
-     document.getElementById("try-us").addEventListener("click", function() {
-        window.location.href = "try-us-page.html";
-    });
+    //Header Links
+        
+        // Home Page
+        const homeLink = document.getElementById("home");
+        if (homeLink) {
+            homeLink.addEventListener("click", function() {
+                window.location.href = "home-page.html";
+            });
+        }
 
-    document.getElementById("home").addEventListener("click", function() {
-        window.location.href = "home-page.html";
-    });
+        //News Page
+        const newsLink = document.getElementById("news");
+        if (newsLink) {
+            newsLink.addEventListener("click", function() {
+                window.location.href = "news-page.html";
+            });
+        }
+
+        // Try Us Page
+        const tryUsLink = document.getElementById("try-us");
+        if (tryUsLink) {
+            tryUsLink.addEventListener("click", function() {
+                window.location.href = "try-us-page.html";
+            });
+        }
+
+        // Timetable Page
+        const timetableLink = document.getElementById("timetable");
+        if (timetableLink) {
+            timetableLink.addEventListener("click", function() {
+                window.location.href = "timetable-page.html";
+            });
+        }
+
+        // About Us Page
+        const aboutUsLink = document.getElementById("about-us");
+        if (aboutUsLink) {
+            aboutUsLink.addEventListener("click", function() {
+                window.location.href = "about-us-page.html";
+            });
+        }
+
+        // Contact Page
+        const contactLink = document.getElementById("contact");
+        if (contactLink) {
+            contactLink.addEventListener("click", function() {
+                window.location.href = "contact-us-page.html";
+            });
+        }
 </script>
 </html>

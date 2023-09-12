@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zumba Studio Timetable</title>
+    <link rel="stylesheet" href="main-styles.css">
+    <style>
+        /* Reset some default styles */
+        body, h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Overall timetable styling */
+        .timetable {
+            width: 90%;
+            max-width: 1216px;
+            margin: 40px auto;
+            background-color: #F2F2F2; /* Light Gray background */
+            padding: 20px;
+            border-radius: 10px; /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+        }
+
+        .timetable h2 {
+            color: #45433E;
+            font-family: "Josefin Sans", sans-serif; /* Improved font stack */
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-align: center; /* Center the title */
+        }
+
+        /* Timetable grid styling */
+        .timetable-grid {
+            display: grid;
+            grid-template-columns: 1fr repeat(5, minmax(120px, 1fr)); /* Adjust the number of days as needed */
+            grid-gap: 20px;
+            overflow: hidden; /* Prevent overflow of grid content */
+            background-color: white; /* White background */
+            border-radius: 10px; /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+        }
+
+        /* Day cell styling */
+        .day-cell {
+            background-color: #B7BFA9;
+            font-family: "Josefin Sans", sans-serif;
+            padding: 10px;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        /* Hour cell styling */
+        .hour-cell, .time-cell {
+            background-color: #B7BFA9;
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 700;
+            padding-right: 10px;
+            border-right: 1px solid #ccc;
+            color: white;
+            text-align: center;
+        }
+
+        /* Class cell styling */
+        .class-cell, .time-cell {
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            background-color: #F2F2F2;
+            padding: 8px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Slightly reduce box shadow */
+            transition: background-color 0.3s; /* Add smooth transition on hover */
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        /* Specific colors for each type of class */
+        .fitness {
+            background-color: #D3E69C; /* Light Brown */
+        }
+
+        .dance {
+            background-color: #E6E19C; /* Greenish Gray */
+        }
+
+        .toning {
+            background-color: #E6C39C; /* Light Blue */
+        }
+
+        .rhythm {
+            background-color: #E6B79C; /* Light Yellow */
+        }
+
+        /* Hover effect for class cells */
+        .class-cell:hover {
+            background-color: #ddd; /* Light Gray on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <header class="nav-menu">
+        <h1 id="home">Zumba</h1>
+        <nav>
+            <ul><li>News</li></ul>
+            <ul><li id="try-us">Try Us</li></ul>
+            <ul><li id="timetable">Timetable</li></ul>
+            <ul><li>About Us</li></ul>
+            <ul><li>Contact</li></ul>
+        </nav>
+    </header>
+    <main>
+        <section class="timetable">
+            <h2>Zumba Studio Timetable</h2>
+            <div class="timetable-grid">
+                <div class="time-cell"></div>
+                <div class="day-cell">Monday</div>
+                <div class="day-cell">Tuesday</div>
+                <div class="day-cell">Wednesday</div>
+                <div class="day-cell">Thursday</div>
+                <div class="day-cell">Friday</div>
+                
+                <div class="hour-cell">5:00 AM</div>
+                <div class="class-cell fitness">Fitness,</br> Mark Berd</div>
+                <div class="class-cell fitness">Fitness,</br> Mark Berd</div>
+                <div class="class-cell fitness">Fitness,</br> Mark Berd</div>
+                <div class="class-cell fitness">Fitness,</br> Mark Berd</div>
+                <div class="class-cell fitness">Fitness,</br> Mark Berd</div>
+                
+                <div class="hour-cell">6:00 AM</div>
+                <div class="class-cell dance">Dance,</br>John Smith</div>
+                <div class="class-cell"></div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+                <div class="class-cell toning">Toning,</br>Lisa Johnson</div>
+                <div class="class-cell"></div>
+                
+                <div class="hour-cell">7:00 AM</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+        
+                <div class="hour-cell">8:00 AM</div>
+                <div class="class-cell fitness">Fitness,</br>Mark Berd</div>
+                <div class="class-cell fitness">Fitness,</br>Mark Berd</div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+                <div class="class-cell"></div>
+        
+                <div class="hour-cell">9:00 AM</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell fitness">Fitness,</br>Mark Berd</div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+                <div class="class-cell fitness">Fitness,</br>Mark Berd</div>
+        
+                <div class="hour-cell">10:00 AM</div>
+                <div class="class-cell fitness">Fitness,</br>Mark Berd</div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+                <div class="class-cell"></div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell"></div>
+        
+                <div class="hour-cell">11:00 AM</div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+                <div class="class-cell fitness">Fitness,</br>Mark Berd</div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+        
+                <div class="hour-cell">12:00 PM</div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell fitness">Fitness,</br>Mark Berd</div>
+                <div class="class-cell"></div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+        
+                <div class="hour-cell">1:00 PM</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+        
+                <div class="hour-cell">2:00 PM</div>
+                <div class="class-cell fitness">Fitness,</br> Mark Berd</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+                <div class="class-cell"></div>
+        
+                <div class="hour-cell">3:00 PM</div>
+                <div class="class-cell toning">Toning,</br> Lisa Johnson</div>
+                <div class="class-cell rhythm">Rhythm,</br> Jane Doe</div>
+                <div class="class-cell dance">Dance,</br> John Smith</div>
+                <div class="class-cell fitness">Fitness,</br>Mark Berd</div>
+                <div class="class-cell"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr class="footer-line">
+        <div class="footer-links">
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Get the App</p>
+            <p>Community</p>
+            <p>Security</p>
+            <p>Terms</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="footer-buttons">
+            <img src="images/facebook.png" alt="Facebook" width="42" height="42">
+            <img src="images/youtube.png" alt="YouTube" width="42" height="42">
+            <img src="images/instagram.png" alt="Instagram" width="42" height="42">
+        </div>
+    </footer>
+</body>
+<script>
+            //Header Links
+        
+        // Home Page
+        const homeLink = document.getElementById("home");
+        if (homeLink) {
+            homeLink.addEventListener("click", function() {
+                window.location.href = "home-page.html";
+            });
+        }
+
+        //News Page
+        const newsLink = document.getElementById("news");
+        if (newsLink) {
+            newsLink.addEventListener("click", function() {
+                window.location.href = "news-page.html";
+            });
+        }
+
+        // Try Us Page
+        const tryUsLink = document.getElementById("try-us");
+        if (tryUsLink) {
+            tryUsLink.addEventListener("click", function() {
+                window.location.href = "try-us-page.html";
+            });
+        }
+
+        // Timetable Page
+        const timetableLink = document.getElementById("timetable");
+        if (timetableLink) {
+            timetableLink.addEventListener("click", function() {
+                window.location.href = "timetable-page.html";
+            });
+        }
+
+        // About Us Page
+        const aboutUsLink = document.getElementById("about-us");
+        if (aboutUsLink) {
+            aboutUsLink.addEventListener("click", function() {
+                window.location.href = "about-us-page.html";
+            });
+        }
+
+        // Contact Page
+        const contactLink = document.getElementById("contact");
+        if (contactLink) {
+            contactLink.addEventListener("click", function() {
+                window.location.href = "contact-us-page.html";
+            });
+        }
+</script>
+</html>

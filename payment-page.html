@@ -9,13 +9,13 @@
 </head>
 <body>
     <header class="nav-menu">
-        <h1>Zumba</h1>
+        <h1 id="home-page">Zumba</h1>
         <nav>
-            <ul><li>News</li></ul>
+            <ul><li id="news">News</li></ul>
             <ul><li id="try-us">Try Us</li></ul>
-            <ul><li>TimeTable</li></ul>
-            <ul><li>About Us</li></ul>
-            <ul><li>Contact</li></ul>
+            <ul><li id="timetable">TimeTable</li></ul>
+            <ul><li id="about-us">About Us</li></ul>
+            <ul><li id="contact">Contact</li></ul>
         </nav>
     </header>
     <main>
@@ -111,7 +111,7 @@
             const selectButtons = document.querySelectorAll('.class-details-button');
             const concessionsText = document.getElementById('concessions');
             const paymentAmount = document.getElementById('payment-amount');
-            const transferAmount = document.getElementById('transfer-amount'); // Add this line
+            const transferAmount = document.getElementById('transfer-amount');
             
             selectButtons.forEach(button => {
                 button.addEventListener('click', function() {
@@ -120,16 +120,60 @@
                     
                     concessionsText.textContent = `${concessions} concessions`;
                     paymentAmount.textContent = `$${price} / one-time`;
-                    transferAmount.textContent = `$${price}`; // Update the transfer amount
+                    transferAmount.textContent = `$${price}`;
                 });
             });
+
+            //Header Links
+        
+        // Home Page
+        const homeLink = document.getElementById("home");
+        if (homeLink) {
+            homeLink.addEventListener("click", function() {
+                window.location.href = "home-page.html";
+            });
+        }
+
+        //News Page
+        const newsLink = document.getElementById("news");
+        if (newsLink) {
+            newsLink.addEventListener("click", function() {
+                window.location.href = "news-page.html";
+            });
+        }
+
+        // Try Us Page
+        const tryUsLink = document.getElementById("try-us");
+        if (tryUsLink) {
+            tryUsLink.addEventListener("click", function() {
+                window.location.href = "try-us-page.html";
+            });
+        }
+
+        // Timetable Page
+        const timetableLink = document.getElementById("timetable");
+        if (timetableLink) {
+            timetableLink.addEventListener("click", function() {
+                window.location.href = "timetable-page.html";
+            });
+        }
+
+        // About Us Page
+        const aboutUsLink = document.getElementById("about-us");
+        if (aboutUsLink) {
+            aboutUsLink.addEventListener("click", function() {
+                window.location.href = "about-us-page.html";
+            });
+        }
+
+        // Contact Page
+        const contactLink = document.getElementById("contact");
+        if (contactLink) {
+            contactLink.addEventListener("click", function() {
+                window.location.href = "contact-us-page.html";
+            });
+        }
         });
-        document.getElementById("try-us").addEventListener("click", function() {
-        window.location.href = "try-us-page.html";
-    });
     </script>
-    
 </body>
 </html>
-
-        
