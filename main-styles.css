@@ -30,9 +30,12 @@ body {
     text-align: left;
     color: #45433E;
 }
-.nav-menu h1:hover{
-    color: #333; /* Change to the desired color on hover */
-    cursor: pointer; /* Change to the desired cursor style on hover */
+
+.nav-menu h1:hover {
+    color: #333;
+    /* Change to the desired color on hover */
+    cursor: pointer;
+    /* Change to the desired cursor style on hover */
 }
 
 .nav-menu nav ul {
@@ -45,7 +48,8 @@ body {
     display: inline-block;
     margin: 0;
     padding: 0;
-    margin-right: 20px; /* Adjust this value to control the space between items */
+    margin-right: 20px;
+    /* Adjust this value to control the space between items */
     color: #45433E;
 }
 
@@ -54,8 +58,10 @@ body {
 }
 
 .nav-menu nav ul li:hover {
-    color: #333; /* Change to the desired color on hover */
-    cursor: pointer; /* Change to the desired cursor style on hover */
+    color: #333;
+    /* Change to the desired color on hover */
+    cursor: pointer;
+    /* Change to the desired cursor style on hover */
     font-weight: 900;
 }
 
@@ -94,11 +100,13 @@ p {
 }
 
 .concessions {
-    width: 90%; /* Adjust the width to span the full container */
+    width: 90%;
+    /* Adjust the width to span the full container */
     max-width: 1216px;
     margin-top: 80px;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center;
+    /* Center the content horizontally */
     flex-wrap: wrap;
     /* Allow wrapping to next line if needed */
     align-items: flex-start;
@@ -112,10 +120,13 @@ p {
 .concessions-heading {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
     gap: 16px;
-    text-align: center; /* Center-align the content horizontally */
+    text-align: center;
+    /* Center-align the content horizontally */
 }
 
 
@@ -123,12 +134,14 @@ p {
     width: 90%;
     max-width: 1216px;
     margin: 80px auto;
-    text-align: center; /* Center the content horizontally */
+    text-align: center;
+    /* Center the content horizontally */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Add some gap between the heading and the paragraph */
+    gap: 20px;
+    /* Add some gap between the heading and the paragraph */
 }
 
 .why-us h2 {
@@ -139,7 +152,8 @@ p {
     font-weight: 700;
     line-height: normal;
     opacity: 1;
-    margin-bottom: 0; /* Remove margin from the heading */
+    margin-bottom: 0;
+    /* Remove margin from the heading */
 }
 
 .why-us p {
@@ -158,13 +172,15 @@ p {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 100px 0; /* Adjust padding as needed */
+    padding: 100px 0;
+    /* Adjust padding as needed */
     border: none;
     border-radius: 24px;
     margin-bottom: 36px;
-    filter: grayscale(100%); /* Apply grayscale filter */
+    filter: grayscale(100%);
+    /* Apply grayscale filter */
     width: 100%;
-    
+
 }
 
 .free-pass h2 {
@@ -175,16 +191,16 @@ p {
     font-weight: 700;
     line-height: normal;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    
+
 }
 
 .free-pass p {
     color: #FFF;
-font-family: Josefin Sans;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
@@ -227,13 +243,14 @@ line-height: normal;
     cursor: pointer;
     border: none;
 }
+
 .input-container input,
-.checkbox-container input{
+.checkbox-container input {
     height: 26px;
 }
-.input-container
-.free-pass-button{
-    height:60px;
+
+.input-container .free-pass-button {
+    height: 60px;
 }
 
 .terms-label {
@@ -244,25 +261,50 @@ line-height: normal;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Vertically align items */
-    white-space: nowrap; /* Prevent text from breaking onto new lines */
+    display: flex;
+    /* Use flexbox to align items */
+    align-items: center;
+    /* Vertically align items */
+    white-space: nowrap;
+    /* Prevent text from breaking onto new lines */
 }
 
 .terms-label input[type="checkbox"] {
-    margin-right: 10px; /* Add some space between checkbox and text */
+    margin-right: 10px;
+    /* Add some space between checkbox and text */
 }
 
+/* Common button style */
+.button-common {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--medium-green, #B7BFA9);
+    color: var(--dark-bown, #45433E);
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+/* Apply the common button style to all buttons */
+input[type="submit"].button-common,
+button.button-common {
+    height: 32px;
+}
+
+/* You can add more specific styles for different button types if needed */
 
 
 .form-row .free-pass-button {
     color: var(--dark-bown, #45433E);
-/* Regular 24 */
-font-family: Josefin Sans;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    /* Regular 24 */
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 /* Styling for Questions section */
@@ -272,7 +314,8 @@ line-height: normal;
     margin: 80px auto 80px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Add gap between sections */
+    gap: 20px;
+    /* Add gap between sections */
 }
 
 .questions-content {
@@ -302,7 +345,8 @@ line-height: normal;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 1; /* Take up the same height as the image */
+    flex: 1;
+    /* Take up the same height as the image */
 }
 
 .questions-form input,
@@ -365,11 +409,11 @@ footer {
 
 .footer-links p {
     /* Regular 16 */
-font-family: Josefin Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     color: #333;
     cursor: pointer;
 }
@@ -400,7 +444,8 @@ line-height: normal;
     border-radius: 24px;
     padding: 8px 20px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Add transition effect */
+    transition: background-color 0.3s;
+    /* Add transition effect */
 }
 
 .select-pass-button:hover,
@@ -408,11 +453,13 @@ line-height: normal;
     background-color: var(--dark-green, #5E8B3A);
 }
 
-.pricing-section{
+.pricing-section {
     margin-top: 64px;
     margin-bottom: 64px;
 }
-.pricing-section, .payment-transfer-section {
+
+.pricing-section,
+.payment-transfer-section {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -421,7 +468,8 @@ line-height: normal;
     width: 90%;
 }
 
-.pricing-content-container, .payment-transfer-section {
+.pricing-content-container,
+.payment-transfer-section {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -430,17 +478,23 @@ line-height: normal;
     align-self: flex-start;
 }
 
-.pricing-divider, .payment-transfer-divider {
+.pricing-divider,
+.payment-transfer-divider {
     width: 100%;
     border: 1px solid var(--dark-bown, #45433E);
     margin: 0;
 }
 
-.concessions-text, .payment-text,
-.transfer-info, .fake-account-number,
-.account-holder-name, .reference,
-.important-text, .userid-text,
-.payment-amount, .important-heading {
+.concessions-text,
+.payment-text,
+.transfer-info,
+.fake-account-number,
+.account-holder-name,
+.reference,
+.important-text,
+.userid-text,
+.payment-amount,
+.important-heading {
     color: var(--dark-bown, #45433E);
     font-family: Josefin Sans;
     font-size: 24px;
@@ -516,7 +570,8 @@ line-height: normal;
         padding: 64px 0 32px;
     }
 
-    .pricing-content-container, .payment-transfer-section {
+    .pricing-content-container,
+    .payment-transfer-section {
         align-self: center;
         max-width: 100%;
         width: 100%;
@@ -540,11 +595,13 @@ line-height: normal;
 .hero-image {
     flex: 1;
     border-radius: 24px 0 0 24px;
-    overflow: hidden; /* Hide any overflow if the image is larger */
+    overflow: hidden;
+    /* Hide any overflow if the image is larger */
 }
 
 .hero-image img {
-    max-width: 100%; /* Set a maximum width to fit the container */
+    max-width: 100%;
+    /* Set a maximum width to fit the container */
     height: auto;
 }
 
@@ -572,23 +629,27 @@ line-height: normal;
     width: 100%;
     max-width: 1216px;
     margin: 80px auto;
-    text-align: center; /* Center the content horizontally */
+    text-align: center;
+    /* Center the content horizontally */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the class cards horizontally */
+    justify-content: center;
+    /* Center the class cards horizontally */
     gap: 20px;
 }
 
 /* Existing styles for class-card elements */
 .class-card {
-    flex: 0 0 calc(31% - 20px); /* Adjust the percentage width */
+    flex: 0 0 calc(31% - 20px);
+    /* Adjust the percentage width */
     background-color: #FFF;
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s;
-    max-width: 400px; /* Add a maximum width to limit image size */
+    max-width: 400px;
+    /* Add a maximum width to limit image size */
 }
 
 /* Existing styles for class-card images */
@@ -639,7 +700,8 @@ line-height: normal;
 }
 
 .class-details-button:hover {
-    background-color: #9b9494; /* Change background color on hover */
+    background-color: #9b9494;
+    /* Change background color on hover */
 }
 
 /* Styles for the team members container */
@@ -724,7 +786,8 @@ line-height: normal;
 .news {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the items horizontally */
+    justify-content: center;
+    /* Center the items horizontally */
     gap: 20px;
     margin: 40px;
 }
@@ -735,7 +798,8 @@ line-height: normal;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center the content inside each article */
+    text-align: center;
+    /* Center the content inside each article */
 }
 
 .news-article img {
@@ -782,37 +846,47 @@ line-height: normal;
 
 .about h1 {
     font-size: 36px;
-    color: #333; /* Dark gray text color */
+    color: #333;
+    /* Dark gray text color */
 }
 
 .about p {
     font-size: 18px;
-    color: #666; /* Medium gray text color */
+    color: #666;
+    /* Medium gray text color */
 }
 
 /* Styles for the "Origins" section */
 .origins {
-    background-color: #FFF; /* White background */
+    background-color: #FFF;
+    /* White background */
     padding: 40px;
 }
 
 .origins h2 {
-    font-size: 36px; /* Larger font size for emphasis */
-    color: #6e7466; /* Reddish text color for a vibrant look */
-    margin-bottom: 20px; /* Add some spacing below the heading */
+    font-size: 36px;
+    /* Larger font size for emphasis */
+    color: #6e7466;
+    /* Reddish text color for a vibrant look */
+    margin-bottom: 20px;
+    /* Add some spacing below the heading */
 }
 
 .origins p {
     font-size: 20px;
-    color: #333; /* Dark gray text color for readability */
-    margin-bottom: 15px; /* Add spacing between paragraphs */
+    color: #333;
+    /* Dark gray text color for readability */
+    margin-bottom: 15px;
+    /* Add spacing between paragraphs */
 }
 
 /* Style for the origins image */
 .origins-image {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
     width: 800px;
-    border-radius: 8px; /* Add a slight border radius for a modern look */
+    border-radius: 8px;
+    /* Add a slight border radius for a modern look */
 }
 
 /* Add some spacing between the image and text */
@@ -826,7 +900,8 @@ line-height: normal;
 
 /* Styles for the "Studio's Story" section */
 .studio-story {
-    background-color: #FFF; /* White background */
+    background-color: #FFF;
+    /* White background */
     padding: 40px;
     text-align: center;
     display: flex;
@@ -836,23 +911,31 @@ line-height: normal;
 }
 
 .studio-story h2 {
-    font-size: 36px; /* Larger font size for emphasis */
-    color: #6e7466; /* Reddish text color for a vibrant look */
-    margin-bottom: 20px; /* Add some spacing below the heading */
+    font-size: 36px;
+    /* Larger font size for emphasis */
+    color: #6e7466;
+    /* Reddish text color for a vibrant look */
+    margin-bottom: 20px;
+    /* Add some spacing below the heading */
 }
 
 .studio-story p {
     font-size: 20px;
-    color: #333; /* Dark gray text color for readability */
-    margin-bottom: 15px; /* Add spacing between paragraphs */
+    color: #333;
+    /* Dark gray text color for readability */
+    margin-bottom: 15px;
+    /* Add spacing between paragraphs */
 }
 
 /* Style for the studio image */
 .studio-image img {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
     width: 800px;
-    border-radius: 8px; /* Add a slight border radius for a modern look */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    border-radius: 8px;
+    /* Add a slight border radius for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a subtle box shadow */
 }
 
 /* Add some spacing between the image and text */
@@ -869,24 +952,29 @@ line-height: normal;
 }
 
 .mission h2 {
-    font-size: 36px; /* Larger font size for emphasis */
-    margin-bottom: 20px; /* Add some spacing below the heading */
+    font-size: 36px;
+    /* Larger font size for emphasis */
+    margin-bottom: 20px;
+    /* Add some spacing below the heading */
 }
 
-.mission p,.mission ul li  {
+.mission p,
+.mission ul li {
     font-size: 24px;
-    margin-bottom: 15px; /* Add spacing between paragraphs */
+    margin-bottom: 15px;
+    /* Add spacing between paragraphs */
     color: black;
 }
 
 .mission ul {
-    list-style-type: disc; /* Use bullet points for the list */
+    list-style-type: disc;
+    /* Use bullet points for the list */
     text-align: left;
-    margin-left: 20px; /* Add some indentation for the list items */
+    margin-left: 20px;
+    /* Add some indentation for the list items */
 }
 
 .mission ul li {
-    margin-bottom: 10px; /* Add spacing between list items */
+    margin-bottom: 10px;
+    /* Add spacing between list items */
 }
-
-
