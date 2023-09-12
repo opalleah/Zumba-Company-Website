@@ -6,101 +6,92 @@
     <title>Zumba Studio Timetable</title>
     <link rel="stylesheet" href="main-styles.css">
     <style>
-        /* Reset some default styles */
-        body, h2 {
-            margin: 0;
-            padding: 0;
+        .timetable{
+            margin:60px;
         }
+/* Timetable grid styling */
+.timetable-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(120px, 1fr)); /* 7 columns, one for each day */
+    grid-gap: 10px; /* Adjust the gap between cells */
+    overflow: hidden;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Add space between header and timetable */
+    padding: 20px;
+    align-items: start; /* Align items at the top of each cell */
+}
 
-        /* Overall timetable styling */
-        .timetable {
-            width: 90%;
-            max-width: 1216px;
-            margin: 40px auto;
-            background-color: #F2F2F2; /* Light Gray background */
-            padding: 20px;
-            border-radius: 10px; /* Add rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
-        }
+/* Day cell styling */
+.day-cell {
+    background-color: #B7BFA9; 
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
 
-        .timetable h2 {
-            color: #45433E;
-            font-family: "Josefin Sans", sans-serif; /* Improved font stack */
-            font-size: 36px;
-            font-weight: 900;
-            margin-bottom: 20px;
-            text-align: center; /* Center the title */
-        }
+/* Hour cell styling */
+.hour-cell, .time-cell {
+    background-color: #B7BFA9; /* Light gray background for hours */
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #fff; /* Text color for hours */
+    text-align: center;
+}
 
-        /* Timetable grid styling */
-        .timetable-grid {
-            display: grid;
-            grid-template-columns: 1fr repeat(5, minmax(120px, 1fr)); /* Adjust the number of days as needed */
-            grid-gap: 20px;
-            overflow: hidden; /* Prevent overflow of grid content */
-            background-color: white; /* White background */
-            border-radius: 10px; /* Add rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
-        }
+/* Class cell styling */
+.class-cell, .time-cell {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative; /* Position relative for pseudo-element */
+}
 
-        /* Day cell styling */
-        .day-cell {
-            background-color: #B7BFA9;
-            font-family: "Josefin Sans", sans-serif;
-            padding: 10px;
-            color: white;
-            font-weight: 700;
-            text-align: center;
-        }
+/* Pseudo-element to create colored stripes for classes */
+.class-cell::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6px; /* Adjust the width of the colored stripe */
+}
 
-        /* Hour cell styling */
-        .hour-cell, .time-cell {
-            background-color: #B7BFA9;
-            font-family: "Josefin Sans", sans-serif;
-            font-weight: 700;
-            padding-right: 10px;
-            border-right: 1px solid #ccc;
-            color: white;
-            text-align: center;
-        }
+/* Specific colors for each type of class */
+.fitness::before {
+    background-color: #d19090; /* Red stripe */
+}
 
-        /* Class cell styling */
-        .class-cell, .time-cell {
-            border-right: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            background-color: #F2F2F2;
-            padding: 8px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Slightly reduce box shadow */
-            transition: background-color 0.3s; /* Add smooth transition on hover */
-            font-family: "Josefin Sans", sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0em;
-            text-align: center;
-        }
+.dance::before {
+    background-color: #79a879; /* Green stripe */
+}
 
-        /* Specific colors for each type of class */
-        .fitness {
-            background-color: #D3E69C; /* Light Brown */
-        }
+.toning::before {
+    background-color: #bda487; /* Orange stripe */
+}
 
-        .dance {
-            background-color: #E6E19C; /* Greenish Gray */
-        }
+.rhythm::before {
+    background-color: #8181ac; /* Blue stripe */
+}
 
-        .toning {
-            background-color: #E6C39C; /* Light Blue */
-        }
+/* Hover effect for class cells */
+.class-cell:hover {
+    background-color: #ddd; /* Light Gray on hover */
+}
 
-        .rhythm {
-            background-color: #E6B79C; /* Light Yellow */
-        }
-
-        /* Hover effect for class cells */
-        .class-cell:hover {
-            background-color: #ddd; /* Light Gray on hover */
-        }
 
     </style>
 </head>
