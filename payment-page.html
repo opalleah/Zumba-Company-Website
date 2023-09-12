@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,26 @@
     <title>Payment</title>
     <link rel="stylesheet" href="main-styles.css">
 </head>
+
 <body>
     <header class="nav-menu">
         <h1 id="home-page">Zumba</h1>
         <nav>
-            <ul><li id="news">News</li></ul>
-            <ul><li id="try-us">Try Us</li></ul>
-            <ul><li id="timetable">TimeTable</li></ul>
-            <ul><li id="about-us">About Us</li></ul>
-            <ul><li id="contact">Contact</li></ul>
+            <ul>
+                <li id="news">News</li>
+            </ul>
+            <ul>
+                <li id="try-us">Try Us</li>
+            </ul>
+            <ul>
+                <li id="timetable">TimeTable</li>
+            </ul>
+            <ul>
+                <li id="about-us">About Us</li>
+            </ul>
+            <ul>
+                <li id="contact">Contact</li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -28,65 +40,65 @@
                 <div class="image-grid">
                     <div class="featured-classes">
                         <div class="image-container class-card">
-                        <img src="images/concession-image1.jpg" alt="Image 1">
-                        <div class="image-title">
-                            <h3>3 Class Pass</h3>
+                            <img src="images/concession-image1.jpg" alt="Image 1">
+                            <div class="image-title">
+                                <h3>1 Class Pass</h3>
+                            </div>
+                            <button class="class-details-button" data-concessions="1" data-price="8.00">Select</button>
                         </div>
-                        <button class="class-details-button" data-concessions="3" data-price="27.60">Select</button>
-                    </div>
-                    <div class="image-container class-card">
-                        <img src="images/concession-image2.jpg" alt="Image 2">
-                        <div class="image-title">
-                            <h3>7 Class Pass</h3>
+                        <div class="image-container class-card">
+                            <img src="images/concession-image2.jpg" alt="Image 2">
+                            <div class="image-title">
+                                <h3>3 Class Pass</h3>
+                            </div>
+                            <button class="class-details-button" data-concessions="3" data-price="21.00">Select</button>
                         </div>
-                        <button class="class-details-button" data-concessions="7" data-price="49.99">Select</button>
-                    </div>
-                    <div class="image-container class-card">
-                        <img src="images/concession-image3.jpg" alt="Image 3">
-                        <div class="image-title">
-                            <h3>16 Class Pass</h3>
+                        <div class="image-container class-card">
+                            <img src="images/concession-image3.jpg" alt="Image 3">
+                            <div class="image-title">
+                                <h3>7 Class Pass</h3>
+                            </div>
+                            <button class="class-details-button" data-concessions="7" data-price="40.00">Select</button>
                         </div>
-                        <button class="class-details-button" data-concessions="16" data-price="99.00">Select</button>
                     </div>
-                </div>
             </section>
             <section class="pricing-section">
                 <div class="pricing-content-container">
-                <div class="pricing-content">
-                    <h2>Pamyment Summary</h2>
-                    <hr class="pricing-divider">
-                    <p id="concessions" class="concessions-text">3 concessions</p>
-                    <hr class="pricing-divider">
-                    <p>Promo Code:</p>
-                    <input type="text" class="promo-code-input">
-                    <hr class="pricing-divider">
-                    <p class="payment-text">Payment</p>
-                    <p id="payment-amount" class="payment-amount">$27.60 / one-time</p>
+                    <div class="pricing-content">
+                        <h2>Pamyment Summary</h2>
+                        <hr class="pricing-divider">
+                        <p id="concessions" class="concessions-text">1 concessions</p>
+                        <hr class="pricing-divider">
+                        <p>Promo Code:</p>
+                        <input type="text" class="promo-code-input">
+                        <hr class="pricing-divider">
+                        <p class="payment-text">Payment</p>
+                        <p id="payment-amount" class="payment-amount">$8.00/ one-time</p>
+                    </div>
                 </div>
-            </div>
                 <div class="important-box">
                     <h3 class="important-heading">Important</h3>
                     <p class="important-text">Please add a reference!</p>
                     <p class="userid-text">USERID123</p>
                 </div>
-            <div class="payment-transfer-section">
-                <div class="payment-transfer-content-container">
-                    <div class="payment-transfer-content">
-                        <h2>Pay <span id="transfer-amount">$27.60</span> with a bank transfer</h2>
-                        <hr class="payment-transfer-divider">
-                        <p class="transfer-info">Account number:</p>
-                        <p class="fake-account-number">1234 5678 9012 3456</p>
-                        <hr class="payment-transfer-divider">
-                        <p class="transfer-info">Account holder name:</p>
-                        <p class="account-holder-name">Zumba Studios</p>
-                        <hr class="payment-transfer-divider">
-                        <p class="transfer-info">Reference:</p>
-                        <p class="reference">USERID123</p>
-                        <hr class="payment-transfer-divider">
-                        <button class="transfer-complete-button">Click when transferred</button>
+                <div class="payment-transfer-section">
+                    <div class="payment-transfer-content-container">
+                        <div class="payment-transfer-content">
+                            <h2>Pay <span id="transfer-amount">$8.00</span> with a bank transfer</h2>
+                            <hr class="payment-transfer-divider">
+                            <p class="transfer-info">Account number:</p>
+                            <p class="fake-account-number">1234 5678 9012 3456</p>
+                            <hr class="payment-transfer-divider">
+                            <p class="transfer-info">Account holder name:</p>
+                            <p class="account-holder-name">Zumba Studios</p>
+                            <hr class="payment-transfer-divider">
+                            <p class="transfer-info">Reference:</p>
+                            <p class="reference">USERID123</p>
+                            <hr class="payment-transfer-divider">
+                            <button class="transfer-complete-button">Click when transferred</button>
+                        </div>
                     </div>
-                </div>
-            </section>  
+            </section>
         </div>
     </main>
     <footer>
@@ -107,17 +119,17 @@
         </div>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const selectButtons = document.querySelectorAll('.class-details-button');
             const concessionsText = document.getElementById('concessions');
             const paymentAmount = document.getElementById('payment-amount');
             const transferAmount = document.getElementById('transfer-amount');
-            
+
             selectButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const concessions = this.getAttribute('data-concessions');
                     const price = parseFloat(this.getAttribute('data-price')).toFixed(2);
-                    
+
                     concessionsText.textContent = `${concessions} concessions`;
                     paymentAmount.textContent = `$${price} / one-time`;
                     transferAmount.textContent = `$${price}`;
@@ -125,55 +137,56 @@
             });
 
             //Header Links
-        
-        // Home Page
-        const homeLink = document.getElementById("home");
-        if (homeLink) {
-            homeLink.addEventListener("click", function() {
-                window.location.href = "home-page.html";
-            });
-        }
 
-        //News Page
-        const newsLink = document.getElementById("news");
-        if (newsLink) {
-            newsLink.addEventListener("click", function() {
-                window.location.href = "news-page.html";
-            });
-        }
+            // Home Page
+            const homeLink = document.getElementById("home");
+            if (homeLink) {
+                homeLink.addEventListener("click", function () {
+                    window.location.href = "home-page.html";
+                });
+            }
 
-        // Try Us Page
-        const tryUsLink = document.getElementById("try-us");
-        if (tryUsLink) {
-            tryUsLink.addEventListener("click", function() {
-                window.location.href = "try-us-page.html";
-            });
-        }
+            //News Page
+            const newsLink = document.getElementById("news");
+            if (newsLink) {
+                newsLink.addEventListener("click", function () {
+                    window.location.href = "news-page.html";
+                });
+            }
 
-        // Timetable Page
-        const timetableLink = document.getElementById("timetable");
-        if (timetableLink) {
-            timetableLink.addEventListener("click", function() {
-                window.location.href = "timetable-page.html";
-            });
-        }
+            // Try Us Page
+            const tryUsLink = document.getElementById("try-us");
+            if (tryUsLink) {
+                tryUsLink.addEventListener("click", function () {
+                    window.location.href = "try-us-page.html";
+                });
+            }
 
-        // About Us Page
-        const aboutUsLink = document.getElementById("about-us");
-        if (aboutUsLink) {
-            aboutUsLink.addEventListener("click", function() {
-                window.location.href = "about-us-page.html";
-            });
-        }
+            // Timetable Page
+            const timetableLink = document.getElementById("timetable");
+            if (timetableLink) {
+                timetableLink.addEventListener("click", function () {
+                    window.location.href = "timetable-page.html";
+                });
+            }
 
-        // Contact Page
-        const contactLink = document.getElementById("contact");
-        if (contactLink) {
-            contactLink.addEventListener("click", function() {
-                window.location.href = "contact-us-page.html";
-            });
-        }
+            // About Us Page
+            const aboutUsLink = document.getElementById("about-us");
+            if (aboutUsLink) {
+                aboutUsLink.addEventListener("click", function () {
+                    window.location.href = "about-us-page.html";
+                });
+            }
+
+            // Contact Page
+            const contactLink = document.getElementById("contact");
+            if (contactLink) {
+                contactLink.addEventListener("click", function () {
+                    window.location.href = "contact-us-page.html";
+                });
+            }
         });
     </script>
 </body>
+
 </html>
