@@ -49,4 +49,4 @@ To get a copy of this Zumba website up and running on your local machine, follow
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/opalleah/zumba-website.git
+   git clone https://github.com/opalleah/zumba-website-1.git
