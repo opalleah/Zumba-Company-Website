@@ -8,9 +8,7 @@ Welcome to the Zumba Website repository! This website is dedicated to all things
 - [Features](#features)
 - [Pages](#pages)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## About
 
